@@ -18,6 +18,9 @@ describe('RomanTest',function(){
             it('a half order secret number',function(){
                 assert.equal(codeBreak.isTheSecretNumber("9138"),"XX--");        
             });
+            it('a half order secret number',function(){
+                assert.equal(codeBreak.isTheSecretNumber("9567"),"X");        
+            });
             it('not a number',function(){
                 assert.equal(codeBreak.isTheSecretNumber("xxxx"),"Fake number");        
             });
